@@ -27,21 +27,21 @@ Here are some ideas to get you started:
 
 # 💻 Tech Stack
 
-![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
-![Pandas](https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg)
-![scikit-learn](https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg)
-![NumPy](https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg)
-![LINUX](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg)
-![GIT](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
-![C](https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg)
-![CSS](https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg)
-![JavaScript](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg)
-![Java](https://upload.wikimedia.org/wikipedia/commons/3/30/Java_programming_language_logo.svg)
-![HTML5](https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg)
-![Markdown](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
-![Glitch](https://upload.wikimedia.org/wikipedia/commons/d/d5/Glitch-logo.png)
-![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)
-![MySQL](https://upload.wikimedia.org/wikipedia/en/e/e6/MySQL_Logo.png)
+[![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffd54f)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=ffd54f)](https://pandas.pydata.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-FF8300?style=for-the-badge&logo=scikit-learn&logoColor=ffd54f)](https://scikit-learn.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=ffd54f)](https://numpy.org/)
+[![LINUX](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000000)](https://www.linux.org/)
+[![GIT](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=ffd54f)](https://git-scm.com/)
+[![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=000000)](https://www.learn-c.org/)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=ffd54f)](https://www.w3.org/Style/CSS/Overview.en.html)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000)](https://www.javascript.com/)
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=ffd54f)](https://www.java.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=ffd54f)](https://html.spec.whatwg.org/multipage/)
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=ffd54f)](https://www.markdownguide.org/)
+[![Glitch](https://img.shields.io/badge/Glitch-2800FF?style=for-the-badge&logo=glitch&logoColor=ffd54f)](https://glitch.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=ffd54f)](https://github.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=ffd54f)](https://www.mysql.com/)
 
 
 
