@@ -3,7 +3,7 @@
 ### About me 
 
 - 🔭 **I’m currently working on web development.**
-- 🌱 **I’m currently learning DSA and full-stack development.**
+- 🌱 **I’m currently learning DSA and Machine-Learning.**
 - 😄 **Pronouns: He/Him**
 
 
@@ -11,12 +11,14 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tej-varshith-madala-6b125b245/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/Tej_Varshith/)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/i_tejvarshith/)
+
 
 # 📫 How to reach me:
 
-- **College Email:** 21pa1a0593@vishnu.edu.in
-- **Personal Email:** tejvarshith45@gmail.com
-- **Instagram:** [@i_tejvarshith](https://www.instagram.com/i_tejvarshith/)
+- **College Email:** 🎓 21pa1a0593@vishnu.edu.in
+- **Personal Email:** 📧 tejvarshith45@gmail.com
+
 
 # ⚡ Fun fact:
 
@@ -36,12 +38,15 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000)](https://www.javascript.com/)
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=ffd54f)](https://www.java.com/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=ffd54f)](https://html.spec.whatwg.org/multipage/)
-[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=ffd54f)](https://www.markdownguide.org/)
 [![Glitch](https://img.shields.io/badge/Glitch-2800FF?style=for-the-badge&logo=glitch&logoColor=ffd54f)](https://glitch.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=ffd54f)](https://github.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=ffd54f)](https://www.mysql.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=ffd54f)](https://www.postgresql.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=ffd54f)](https://firebase.google.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=ffd54f)](https://getbootstrap.com/)
 
-### 💬 Quote of the Day:
+
+### 💬 Quote:
 > *"One should perform their duties with utmost sincerity, without attachment to the results."* - Lord Krishna, Bhagavad Gita
 
 
