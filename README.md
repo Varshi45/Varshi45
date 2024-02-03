@@ -17,7 +17,7 @@
 # 📫 How to reach me:
 
 - **College Email:** 🎓 21pa1a0593@vishnu.edu.in
-[![Personal Email](https://img.shields.io/badge/Email-tejvarshith45%40gmail.com-%23EA4335?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:tejvarshith45@gmail.com)
+- [![Personal Email](https://img.shields.io/badge/Email-tejvarshith45%40gmail.com-%23EA4335?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:tejvarshith45@gmail.com)
 
 
 # ⚡ Fun fact:
