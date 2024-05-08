@@ -34,6 +34,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=ffd54f)](https://numpy.org/)
 [![LINUX](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000000)](https://www.linux.org/)
 [![GIT](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=ffd54f)](https://git-scm.com/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=000000)](https://www.learn-c.org/)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=ffd54f)](https://www.w3.org/Style/CSS/Overview.en.html)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000)](https://www.javascript.com/)
