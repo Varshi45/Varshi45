@@ -2,8 +2,8 @@
 
 ### About me 
 
-- 🔭 **I’m currently working on web development.**
 - 🌱 **I’m currently learning DSA and Machine-Learning.**
+- - 🔭 **I’ve experience of working on multiple web development projects**
 - 😄 **Pronouns: He/Him**
 
 ### 🌐 Socials
