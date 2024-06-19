@@ -1,10 +1,15 @@
-### Hi there 👋
+<h1 align="center">Tej Varshith</h1>
+<p align="center">A passionate Web Developer</p
+---
+
+### Hey there 👋
 
 ### About me 
 
 - 🌱 **I’m currently learning React-Native and DSA.**
 - 🔭 **I’ve experience of working on multiple web development projects**
 - 😄 **Pronouns: He/Him**
+- 💬 **Ask me about *Web Development* and *App Development***
 
 ### 🌐 Socials
 
