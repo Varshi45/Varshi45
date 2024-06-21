@@ -18,9 +18,11 @@ jobs:
           MEDIUM_USERNAME=@21pa1a0593
           BLOGS=$(curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}" | jq -r '.items | map({title, link}) | .[] | " - [\(.title)](\(.link))"')
           echo "$BLOGS" > blogs.md
+          echo "::set-output name=blogs::$BLOGS"
 
       - name: Update README
         run: |
+          BLOGS=$(cat blogs.md)
           sed -i '/<!--START_SECTION:medium_blogs-->/, /<!--END_SECTION:medium_blogs-->/c\<!--START_SECTION:medium_blogs-->\n'"$BLOGS"'\n<!--END_SECTION:medium_blogs-->' README.md
 
       - name: Commit changes
