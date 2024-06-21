@@ -28,7 +28,7 @@
 
 - **I'm not an Introvert** 😎🎉
 
-### Latest Medium Blogs
+# Ⓜ️ Latest Medium Blogs
 <!--START_SECTION:medium_blogs-->
  - [A Dive into My Portfolio](https://medium.com/@21pa1a0593/a-dive-into-my-portfolio-ee901f7370bf?source=rss-f2174fbae462------2)
  - [EJS vs. React: Overview](https://medium.com/@21pa1a0593/ejs-vs-react-overview-aaff003ce69f?source=rss-f2174fbae462------2)
