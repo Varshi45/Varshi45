@@ -1,0 +1,32 @@
+name: Update README with Latest Medium Blogs
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour, adjust as needed
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Medium Blogs
+        id: fetch_medium_blogs
+        run: |
+          MEDIUM_USERNAME=@21pa1a0593
+          BLOGS=$(curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}" | jq -r '.items | map({title, link}) | .[] | " - [\(.title)](\(.link))"')
+          echo "$BLOGS" > blogs.md
+
+      - name: Update README
+        run: |
+          sed -i '/<!--START_SECTION:medium_blogs-->/, /<!--END_SECTION:medium_blogs-->/c\<!--START_SECTION:medium_blogs-->\n'"$BLOGS"'\n<!--END_SECTION:medium_blogs-->' README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'Update README with latest Medium blogs'
+          git push
