@@ -28,6 +28,9 @@
 
 - **I'm not an Introvert** 😎🎉
 
+### Latest Medium Blogs
+<!--START_SECTION:medium_blogs-->
+<!--END_SECTION:medium_blogs-->
 
 # 💻 Tech Stack
 
