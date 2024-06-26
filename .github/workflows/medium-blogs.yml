@@ -1,17 +1,19 @@
-name: Update README with Latest Medium Blogs
-
+name: Latest blog post workflow
 on:
-  schedule:
-    - cron: '30 0 * * 0' 
-  workflow_dispatch:  # Allows manual trigger
+  schedule: # Run workflow automatically
+    - cron: '30 0 * * 0'
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+permissions:
+  contents: write # To write the generated contents to the readme
 
 jobs:
-  update-readme:
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
+      - name: Checkout
+        uses: actions/checkout@v4
+        
       - name: Fetch Medium Blogs
         id: fetch_medium_blogs
         run: |
@@ -24,8 +26,8 @@ jobs:
         run: |
           BLOGS=$(cat blogs.md)
           awk -v blogs="$BLOGS" 'BEGIN {found=0} \
-          /<!--START_SECTION:medium_blogs-->/ {print; print blogs; found=1; next} \
-          /<!--END_SECTION:medium_blogs-->/ {found=0} \
+          /<!-- BLOG-POST-LIST:START -->/ {print; print blogs; found=1; next} \
+          /<!-- BLOG-POST-LIST:END -->/ {found=0} \
           !found {print}' README.md > README.tmp && mv README.tmp README.md
 
       - name: Commit changes
