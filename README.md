@@ -1,5 +1,5 @@
-### <h1 align="center">Hey there 👋, I'm Tej Varshith</h1>
-<p align="center">A passionate Web Developer</p
+<h1 align="center">Hey there 👋, I'm Tej Varshith</h1>
+<p align="center">A passionate Web Developer</p>
 ---
 
 ### About me 
@@ -22,7 +22,6 @@
 
 - **College Email:** 🎓 21pa1a0593@vishnu.edu.in
 - [![Personal Email](https://img.shields.io/badge/Email-tejvarshith45%40gmail.com-%23EA4335?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:tejvarshith45@gmail.com)
-
 
 # ⚡ Fun fact:
 
@@ -67,6 +66,9 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-FF8300?style=for-the-badge&logo=scikit-learn&logoColor=ffd54f)](https://scikit-learn.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=ffd54f)](https://numpy.org/)
 
+### Badges
+
+<img src="https://github.com/Varshi45/Varshi45/blob/main/GsSOC%20badge.png?raw=true" alt="GsSOC 2024 Badge" width="230" height="200">
 
 ### 💬 Quote:
 > *"One should perform their duties with utmost sincerity, without attachment to the results."* - Lord Krishna, Bhagavad Gita
