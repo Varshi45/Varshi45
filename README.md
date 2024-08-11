@@ -81,4 +81,4 @@
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=Varshi45&show_icons=true&theme=radical)](https://github.com/Varshi45)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Varshi45&layout=compact&theme=radical)](https://github.com/Varshi45)
 
-[![](https://visitcount.itsvg.in/api?id=Varshi45&label=Profile%20Views&color=8&icon=5&pretty=false)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=Varshi45&label=Profile%20Views&color=3&icon=7&pretty=false)](https://visitcount.itsvg.in)
