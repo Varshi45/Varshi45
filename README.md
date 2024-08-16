@@ -4,10 +4,10 @@
 
 ### About me 
 
-- 🌱 **I’m currently learning React-Native and DSA.**
+- 🌱 **I’m currently learning DSA.**
 - 🔭 **I’ve experience of working on multiple web development projects**
 - 😄 **Pronouns: He/Him**
-- 💬 **Ask me about *Web Development* and *App Development***
+- 💬 **Ask me about *Web/App Development* and *DSA***
 
 ### 🌐 Socials
 
