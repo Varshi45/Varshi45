@@ -1,9 +1,41 @@
-- name: Commit changes
-  env:
-    GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  run: |
-    git config --global user.name 'github-actions[bot]'
-    git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-    git add README.md
-    git commit -m 'Update README with latest Medium blogs'
-    git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+name: Test GH_TOKEN Permissions
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow.
+
+jobs:
+  test-gh-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Verify GH_TOKEN Permissions
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Testing GH_TOKEN permissions..."
+          
+          # Configure git to use the token
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Test if we can fetch the repository
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
+          git fetch origin
+          
+          # Create a dummy file and push to the repo
+          echo "This is a test commit" > test-file.txt
+          git add test-file.txt
+          git commit -m "Test commit for verifying GH_TOKEN permissions"
+          git push origin HEAD:test-gh-token-test
+          
+          echo "Test completed. Check if the branch 'test-gh-token-test' is created in your repository."
+
+      - name: Cleanup Test Branch
+        if: ${{ always() }} # Ensure cleanup runs even if the previous step fails.
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Cleaning up test branch..."
+          git push origin --delete test-gh-token-test || echo "Branch cleanup failed, check manually."
