@@ -29,10 +29,15 @@ jobs:
           echo "Debugging blogs.md content:"
           cat blogs.md
 
+      - name: Escape special characters for sed
+        run: |
+          BLOGS=$(cat blogs.md | sed 's/[&/\]/\\&/g')
+          echo "$BLOGS" > escaped_blogs.md
+
       - name: Update README
         run: |
-          BLOGS=$(cat blogs.md)
-          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$(printf '%s\n' "$BLOGS")"'\n<!-- BLOG-POST-LIST:END -->' README.md
+          BLOGS=$(cat escaped_blogs.md)
+          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$BLOGS"'\n<!-- BLOG-POST-LIST:END -->' README.md
 
       - name: Commit changes
         env:
