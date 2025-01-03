@@ -1,44 +1,36 @@
-name: Latest blog post workflow
+name: Update README with Latest Medium Blogs
 on:
   schedule:
-    - cron: '30 0 * * 0' # Weekly on Sunday at 12:30 AM UTC
+    - cron: '30 0 * * 0'
   workflow_dispatch:
-permissions:
-  contents: write
 
 jobs:
-  update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
+  update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y jq curl
-
+      # Step 2: Fetch Medium Blogs
       - name: Fetch Medium Blogs
+        id: fetch_medium_blogs
         run: |
           MEDIUM_USERNAME=21pa1a0593
           BLOGS=$(curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}" | jq -r '.items | map({title, link}) | .[] | " - [\(.title)](\(.link))"')
           echo "$BLOGS" > blogs.md
-          echo "blogs=$BLOGS" >> $GITHUB_ENV
+          echo "::set-output name=blogs::$BLOGS"
 
-      - name: Debug blogs.md
-        run: |
-          echo "Debugging blogs.md content:"
-          cat blogs.md
-
-      - name: Escape special characters for sed
-        run: |
-          BLOGS=$(cat blogs.md | sed 's/[&/\]/\\&/g')
-          echo "$BLOGS" > escaped_blogs.md
-
+      # Step 3: Update README.md
       - name: Update README
         run: |
-          BLOGS=$(cat escaped_blogs.md)
-          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$BLOGS"'\n<!-- BLOG-POST-LIST:END -->' README.md
+          BLOGS=$(cat blogs.md)
+          awk -v blogs="$BLOGS" 'BEGIN {found=0} \
+          /<!--START_SECTION:medium_blogs-->/ {print; print blogs; found=1; next} \
+          /<!--END_SECTION:medium_blogs-->/ {found=0} \
+          !found {print}' README.md > README.tmp && mv README.tmp README.md
 
+      # Step 4: Commit changes to the repository
       - name: Commit changes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -47,5 +39,4 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           git commit -m 'Update README with latest Medium blogs'
-          git pull --rebase origin main
           git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
