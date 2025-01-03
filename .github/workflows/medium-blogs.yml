@@ -1,7 +1,7 @@
 name: Latest blog post workflow
 on:
   schedule:
-    - cron: '30 0 * * 0'
+    - cron: '30 0 * * 0' # Weekly on Sunday at 12:30 AM UTC
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,10 +24,15 @@ jobs:
           echo "$BLOGS" > blogs.md
           echo "blogs=$BLOGS" >> $GITHUB_ENV
 
+      - name: Debug blogs.md
+        run: |
+          echo "Debugging blogs.md content:"
+          cat blogs.md
+
       - name: Update README
         run: |
           BLOGS=$(cat blogs.md)
-          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$BLOGS"'\n<!-- BLOG-POST-LIST:END -->' README.md
+          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$(printf '%s\n' "$BLOGS")"'\n<!-- BLOG-POST-LIST:END -->' README.md
 
       - name: Commit changes
         env:
