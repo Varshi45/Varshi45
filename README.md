@@ -30,8 +30,6 @@
 # Ⓜ️ Latest Medium Blogs
 <!--START_SECTION:medium_blogs-->
  - [My Year in Review — 2024](https://medium.com/@21pa1a0593/my-year-in-review-2024-a12153190c74?source=rss-f2174fbae462------2)
- - [My Accenture Interview Experience](https://medium.com/@21pa1a0593/my-accenture-interview-experience-14a40dd36063?source=rss-f2174fbae462------2)
- - [LeetCode Chronicles — 6August 2024](https://medium.com/@21pa1a0593/leetcode-chronicles-6august-2024-e93ebab72ba2?source=rss-f2174fbae462------2)
 <!--END_SECTION:medium_blogs-->
 
 <details>
